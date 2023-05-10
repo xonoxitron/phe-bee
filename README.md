@@ -16,26 +16,14 @@ The **phe-bee** can perform two types of **Homomorphic** operations:
 
 ![ElGamal Multiplicative Homomorphic](./ElGamal-Multiplicative-Homomorphic.png "ElGamal Multiplicative Homomorphic")
 
-## Installation
-
-```console
-pip install pheÈ
-```
-
-OR
-
-```console
-pip3 install phe
-```
-
 ## Usage
 
 ```console
-python he-sandbox-test.py
+python phe-bee.sandbox.py
 ```
 
 OR
 
 ```console
-python3 he-sandbox-test.py 
+python3 phe-bee.sandbox.py
 ```
