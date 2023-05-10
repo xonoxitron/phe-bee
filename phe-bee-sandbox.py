@@ -1,9 +1,8 @@
 from prime import *
 import random
 
+
 # encryption function
-
-
 def encrypt(m, r, exponential=False):
     c1 = pow(g, r, p)
     if exponential is True:
@@ -13,8 +12,6 @@ def encrypt(m, r, exponential=False):
     return c1, c2
 
 # decryption function
-
-
 def decrypt(c1, c2):
     return (c2 * pow(c1, -1*x, p)) % p
 
@@ -37,6 +34,7 @@ c1, c2 = encrypt(m, r)
 p = decrypt(c1, c2)
 
 print(c1, c2, p)
+
 
 # multiplicative homomorphic
 m1 = 9
