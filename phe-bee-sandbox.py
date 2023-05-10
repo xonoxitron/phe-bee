@@ -2,6 +2,8 @@ from prime import *
 import random
 
 # encryption function
+
+
 def encrypt(m, r, exponential=False):
     c1 = pow(g, r, p)
     if exponential is True:
@@ -11,8 +13,11 @@ def encrypt(m, r, exponential=False):
     return c1, c2
 
 # decryption function
+
+
 def decrypt(c1, c2):
     return (c2 * pow(c1, -1*x, p)) % p
+
 
 # key generation
 p = generate_random_prime_number(bits=1024)
@@ -23,8 +28,8 @@ y = pow(g, x, p)                            # public key
 
 print(x, y)
 
-m = 100
-r = random.randint(1, p-1)
+m = 100                                     # message to encrypt
+r = random.randint(1, p-1)                  # random encryption number
 
 print(m, r)
 
