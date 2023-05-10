@@ -1,4 +1,4 @@
-# phe-bee | Partially Homomorphic Encryption Sandbox
+# phe-bee 🐝 | Partially Homomorphic Encryption Sandbox
 
 ![ElGamal Encryption Scheme](./ElGamal-Encryption-Scheme.png "ElGamal Encryption Scheme")
 
