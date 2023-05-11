@@ -12,13 +12,15 @@ def encrypt(m, r, exponential=False):
     return c1, c2
 
 # decryption function
+
+
 def decrypt(c1, c2):
     return (c2 * pow(c1, -1*x, p)) % p
 
 
 # key generation
 p = generate_random_prime_number(bits=1024)
-g = generate_random_prime_number(bits=64)
+g = random.randint(1, p-1)
 
 x = generate_random_prime_number(bits=512)  # private key
 y = pow(g, x, p)                            # public key
